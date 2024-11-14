@@ -46,11 +46,11 @@ export async function POST(request: Request) {
 
     const messages = [
       {
-        role: "system",
+        role: "system" as const,
         content: systemPrompt
       },
       {
-        role: "user",
+        role: "user" as const,
         content: `请分析以下梦境：\n\n${dream}`
       }
     ];
