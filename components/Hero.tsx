@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button";
 import { MoonStar, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
       <div className="absolute inset-0 -z-10 opacity-20">
@@ -43,21 +46,21 @@ export default function Hero() {
         >
           <MoonStar className="mx-auto h-16 w-16 text-primary mb-8" />
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
-            解读你的梦境世界
+            {t('title')}
           </h1>
           <p className="text-lg leading-8 text-muted-foreground mb-8">
-            通过先进的AI技术，为您提供专业、个性化的梦境解读服务。探索潜意识的奥秘，发现梦境背后的深层含义。
+            {t('description')}
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="gap-2" asChild>
               <a href="#dream-analyzer">
                 <Sparkles className="h-4 w-4" />
-                开始解梦
+                {t('startButton')}
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/about">
-                了解更多
+                {t('learnMore')}
               </Link>
             </Button>
           </div>

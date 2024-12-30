@@ -3,38 +3,41 @@
 import { Card } from "@/components/ui/card";
 import { Brain, History, Lock, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-
-const features = [
-  {
-    icon: Brain,
-    title: "AI智能解析",
-    description: "运用先进的人工智能技术，提供准确、深入的梦境分析"
-  },
-  {
-    icon: History,
-    title: "历史记录",
-    description: "记录并追踪您的梦境模式，发现潜在的规律"
-  },
-  {
-    icon: Lock,
-    title: "隐私保护",
-    description: "严格的数据加密和隐私保护措施，确保您的梦境内容安全"
-  },
-  {
-    icon: Sparkles,
-    title: "个性化推荐",
-    description: "基于您的梦境特点，提供定制化的解读和建议"
-  }
-];
+import { useTranslations } from 'next-intl';
 
 export default function Features() {
+  const t = useTranslations('features');
+
+  const features = [
+    {
+      icon: Brain,
+      title: t('aiAnalysis.title'),
+      description: t('aiAnalysis.description')
+    },
+    {
+      icon: History,
+      title: t('history.title'),
+      description: t('history.description')
+    },
+    {
+      icon: Lock,
+      title: t('privacy.title'),
+      description: t('privacy.description')
+    },
+    {
+      icon: Sparkles,
+      title: t('personalization.title'),
+      description: t('personalization.description')
+    }
+  ];
+
   return (
     <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">为什么选择我们？</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('title')}</h2>
           <p className="text-muted-foreground">
-            专业的梦境解读服务，帮助您探索潜意识的奥秘
+            {t('description')}
           </p>
         </div>
 

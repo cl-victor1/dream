@@ -1,0 +1,52 @@
+{
+  "Index": {
+    "title": "Dream Interpreter",
+    "description": "Explore your subconscious world through AI-powered dream analysis",
+    "analyze": "Analyze Dream",
+    "placeholder": "Describe your dream...",
+    "loading": "Analyzing your dream..."
+  },
+  "hero": {
+    "title": "Dream Interpreter",
+    "description": "Explore your subconscious world through AI-powered dream analysis",
+    "startButton": "Start Analysis",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Why Choose Us?",
+    "description": "Professional dream interpretation service to help you explore the mysteries of the subconscious",
+    "aiAnalysis": {
+      "title": "AI Analysis",
+      "description": "Advanced AI technology provides accurate, in-depth dream analysis"
+    },
+    "history": {
+      "title": "History Tracking",
+      "description": "Record and track your dream patterns to discover potential patterns"
+    },
+    "privacy": {
+      "title": "Privacy Protection",
+      "description": "Strict data encryption and privacy measures ensure your dream content is secure"
+    },
+    "personalization": {
+      "title": "Personalized Recommendations",
+      "description": "Provide customized interpretations and suggestions based on your dream characteristics"
+    }
+  },
+  "dreamAnalyzer": {
+    "title": "Dream Analyzer",
+    "placeholder": "Please describe your dream in detail...",
+    "analyze": "Start Analysis",
+    "analyzing": "Analyzing...",
+    "viewFullAnalysis": "View Full Analysis",
+    "error": {
+      "empty": "Please enter your dream description",
+      "analysis": "An error occurred during analysis"
+    }
+  },
+  "common": {
+    "backHome": "Back to Home",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again"
+  }
+}
