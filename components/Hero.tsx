@@ -53,10 +53,10 @@ export default function Hero() {
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="gap-2" asChild>
-              <a href="#dream-analyzer">
+              <Link href="#dream-analyzer">
                 <Sparkles className="h-4 w-4" />
                 {t('startButton')}
-              </a>
+              </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/about">
